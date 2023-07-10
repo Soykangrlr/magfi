@@ -2,6 +2,8 @@ import Link from 'next/link'
 import './globals.css'
 import type { Metadata } from 'next'
 import { Providers } from './redux/provider'
+import { Suspense } from 'react'
+import Loading from './posts/[id]/loading'
 
 
 export const metadata: Metadata = {
@@ -27,7 +29,9 @@ export default function RootLayout({
             </Link>
             </div>
         </div>
+  
         <Providers>{children}</Providers>
+  
         </body>
     </html>
   )
