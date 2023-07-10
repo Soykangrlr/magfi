@@ -9,7 +9,7 @@ function CommentsCard(props: Card) {
     const { name, email, body, image } = props
     return (
 
-        <div className="p-2 mx-6  flex gap-x-4 mt-2  border-b-2 items-center">
+        <div className="p-2 md:mx-6  md:flex gap-x-4 mt-2  border-b-2 items-center">
 
             <img src={image} alt="" className="w-16 rounded-md" />
             <div >

@@ -22,8 +22,8 @@ export default function Posts({ params }: { params: { id: number} }) {
     return (
         <div className="mx-auto container mt-10 flex justify-center ">
             <div className=" max-w-5xl border border-gray-500 p-6 rounded-md ">
-                <div className="flex gap-x-6 items-center">
-                <img src={faker.image.avatarLegacy()} alt="" className="rounded-full" />
+                <div className="md:flex-row flex flex-col  gap-x-6 md:items-center text-center md:text-left">
+                <img src={faker.image.avatarLegacy()} alt="" className="rounded-full mx-auto" />
                 <div className=" flex flex-col gap-y-5">
                     <div>
                     <p className="text-blue-950 font-bold text-2xl mb-1">{user?.name}</p>
